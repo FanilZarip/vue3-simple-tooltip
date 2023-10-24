@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import HeaderTitle from "./components/icons/HeaderTitle.vue";
+import HeaderTitle from "./components/HeaderTitle.vue";
 </script>
 
 <template>
