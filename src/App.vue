@@ -1,15 +1,35 @@
-<script setup lang="ts">
-import HeaderTitle from "./components/icons/HeaderTitle.vue";
-</script>
-
 <template>
   <header>
-    <div class="wrapper">
-      <HeaderTitle />
-    </div>
+    <HeaderTitle />
   </header>
 
-  <main></main>
+  <main class="wrapper">
+    <div>
+      <SButton text="I am Button" type="radial">
+        <template #append-icon> <span>i</span> </template>
+      </SButton>
+      <SButton text="I am Button" type="radial" />
+    </div>
+    <div>
+      <STooltip tooltip-text="Hi, i am here again">
+        <SButton text="I am Button" type="radial" />
+      </STooltip>
+      <STooltip tooltip-text="Hi, i am here again" has-array>
+        <SButton text="I am Button" type="radial" />
+      </STooltip>
+    </div>
+  </main>
 </template>
 
-<style scoped></style>
+<script setup lang="ts">
+import HeaderTitle from "./components/HeaderTitle.vue";
+import SButton from "./components/SButton.vue";
+import STooltip from "./components/STooltip.vue";
+</script>
+
+<style scoped>
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+</style>
