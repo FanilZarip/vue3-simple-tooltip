@@ -26,6 +26,7 @@ module.exports = {
         ignores: [],
       },
     ],
+    "vue/no-required-prop-with-default": "error",
     "vue/no-async-in-computed-properties": "error",
     "vue/no-deprecated-v-bind-sync": "error",
     "vue/no-deprecated-v-on-native-modifier": "error",
